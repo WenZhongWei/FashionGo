@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+	<ScrollView 
+    
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    > 
+<LinearLayout 
+    
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+
+    
+  	<com.maifeng.fashiongo.banner.ImageCycleView 
+  	    android:id="@+id/ad_view"
+        android:layout_width="match_parent"
+        android:layout_height="150dp" 
+        android:background="@color/white">
+  	    
+  	</com.maifeng.fashiongo.banner.ImageCycleView>
+  	
+  	<LinearLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="150dp"
+  	    android:orientation="horizontal"
+  	    android:layout_margin="10dp"
+  	    >
+  	    <com.android.volley.toolbox.NetworkImageView 
+  	        android:id="@+id/left_image"
+  	        android:layout_weight="1"
+  	        android:layout_width="0dp"
+  	        android:layout_height="match_parent"
+  	        android:scaleType="fitCenter"
+  	        />
+  	    
+  	    <LinearLayout 
+  	        android:layout_weight="1"
+  	        android:layout_width="0dp"
+  	        android:layout_height="match_parent"
+  	        android:orientation="vertical">
+  	        <com.android.volley.toolbox.NetworkImageView
+  	            android:id="@+id/right_image_top"
+  	            android:layout_weight="1"
+  	            android:layout_width="match_parent"
+  	            android:layout_height="0dp"
+  	            android:scaleType="fitCenter"
+  	            />
+  	        <com.android.volley.toolbox.NetworkImageView
+  	            android:id="@+id/right_image_bottom"
+  	            android:layout_weight="1"
+  	            android:layout_width="match_parent"
+  	            android:layout_height="0dp"
+  	            android:scaleType="fitCenter"
+  	            />
+  	        
+  	    </LinearLayout>
+  	    
+  	    
+  	</LinearLayout>
+  	<TextView 
+  	    android:layout_width="wrap_content"
+  	    android:layout_height="wrap_content"
+  	   	android:layout_marginLeft="5dp"
+  	   	android:layout_marginRight="5dp"
+  	   	android:text="新品推荐 TODAY"
+  	    android:textColor="#fc3c4a"
+  	    android:textSize="12sp"
+  	    />
+  	<TextView 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="5dp"
+  	    android:layout_marginLeft="5dp"
+  	   	android:layout_marginRight="5dp"
+  	    android:background="@drawable/new_line"/>
+  	
+  	<ListView 
+  	    android:id="@+id/recommendation_list"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:paddingLeft="5dp"
+    	android:paddingRight="5dp"
+  	    ></ListView>
+</LinearLayout>
+
+</ScrollView>
+    
+</RelativeLayout>

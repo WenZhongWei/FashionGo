@@ -1,0 +1,137 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical"
+    >
+	<android.support.v4.view.ViewPager
+	    android:id="@+id/viewpager"
+	    android:layout_weight="1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    ></android.support.v4.view.ViewPager>
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp" 
+	    android:background="#545454"
+	    ></LinearLayout>
+	
+   <LinearLayout 
+       android:layout_width="match_parent"
+       android:gravity="center" 
+       android:layout_height="50dp"
+       >
+
+       <LinearLayout
+           android:id="@+id/layout_home"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="1dp"
+           android:layout_marginTop="1dp"
+           android:orientation="vertical"
+           android:gravity="center"
+            android:layout_weight="1"
+           >
+
+           <ImageView 
+               android:id="@+id/iv_home"
+               android:layout_width="25dp"
+               android:layout_height="25dp"               
+               android:src="@drawable/ico_home_unin"
+               />
+           <TextView 
+               android:id="@+id/tv_home"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:text="首页"
+               android:gravity="center"
+               android:textSize="12sp"              
+               />
+           
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/layout_shoppingcar"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="1dp"
+           android:layout_marginTop="1dp"
+           android:orientation="vertical" 
+            android:gravity="center"
+            android:layout_weight="1">
+
+           <ImageView 
+               android:id="@+id/iv_shoppingcar"
+               android:layout_width="25dp"
+               android:layout_height="25dp"               
+               android:src="@drawable/ico_shoppingcar_unin"
+               />
+           <TextView 
+               android:id="@+id/tv_shoppingcar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="购物车"
+               android:gravity="center"
+               android:textSize="12sp"              
+               />
+           
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/layout_mine"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="1dp"
+           android:layout_marginTop="1dp"
+           android:orientation="vertical" 
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView 
+               android:id="@+id/iv_mine"
+               android:layout_width="25dp"
+               android:layout_height="25dp"               
+               android:src="@drawable/ico_mine_unin"
+               />
+           <TextView 
+               android:id="@+id/tv_mine"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="个人中心"
+               android:gravity="center"
+               android:textSize="12sp"              
+               />
+           
+       </LinearLayout>
+
+       <LinearLayout
+           android:id="@+id/layout_more"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="1dp"
+           android:layout_marginTop="1dp"
+           android:orientation="vertical" 
+           android:layout_weight="1"
+           android:gravity="center">
+
+           <ImageView 
+               android:id="@+id/iv_more"
+               android:layout_width="25dp"
+               android:layout_height="25dp"               
+               android:src="@drawable/ico_more_unin"
+               />
+           <TextView 
+               android:id="@+id/tv_more"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+               android:text="更多"
+               android:gravity="center"
+               android:textSize="12sp"              
+               />
+           
+       </LinearLayout>
+   </LinearLayout>
+</LinearLayout>

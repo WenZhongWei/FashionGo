@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F0F0"
+    android:orientation="vertical" >
+    	
+    <include 
+    	layout="@layout/topbar"
+        android:id="@+id/topbar"/>
+
+    
+    <TableLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/bg_input9"
+        android:stretchColumns="1">
+        <TableRow 
+            android:id="@+id/tab_about">
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ico_about"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="关于我们"
+                android:textColor="#7B7B7B"
+                android:textSize="16sp"/>
+            <ImageView 
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ico_go"
+                android:layout_margin="6dp"
+                />
+        </TableRow>
+        	<TextView 
+        	    android:layout_width="match_parent"
+            	android:layout_height="1dp"
+               	android:background="#BEBEBE"/>
+        <TableRow 
+            android:id="@+id/tab_clear">
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ico_clear"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="清除缓存"
+                android:textColor="#7B7B7B"
+                android:textSize="16sp"/>
+            <ImageView 
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ico_go"
+                android:layout_margin="6dp"
+                />
+        </TableRow>
+        	<TextView 
+        	    android:layout_width="match_parent"
+            	android:layout_height="1dp"
+               	android:background="#BEBEBE"/>
+        <TableRow 
+            android:id="@+id/tab_opinion">
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ico_opinion"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="意见反馈"
+                android:textColor="#7B7B7B"
+                android:textSize="16sp"/>
+            <ImageView 
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ico_go"
+                android:layout_margin="6dp"
+                />
+        </TableRow>
+        	<TextView 
+        	    android:layout_width="match_parent"
+            	android:layout_height="1dp"
+               	android:background="#BEBEBE"/>
+        <TableRow 
+            android:id="@+id/tab_update">
+            <ImageView 
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/ico_update"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:paddingLeft="20dp"
+                android:gravity="center_vertical"
+                android:text="检查更新"
+                android:textColor="#7B7B7B"
+                android:textSize="16sp"/>
+            <ImageView 
+                android:layout_width="10dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ico_go"
+                android:layout_margin="6dp"
+                />
+        </TableRow>
+
+       
+    </TableLayout>
+    
+    
+    
+    
+</LinearLayout>

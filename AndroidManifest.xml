@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.maifeng.fashiongo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature android:name="android.hardware.nfc.hce" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+
+        <!-- android:theme="@style/AppTheme" -->
+        <activity
+            android:name="com.maifeng.fashiongo.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity android:name=".FeedBackAcitvtty" />
+        <!-- 登陸界面 -->
+        <activity
+            android:name="com.maifeng.fashiongo.LoginActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 引导界面 -->
+        <activity
+            android:name="com.maifeng.fashiongo.UserGuideActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 基本信息 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Basic_Info_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 收货地址 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Goods_Address_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 新增地址 -->
+        <activity
+            android:name="com.maifeng.fashiongo.New_Goods_Address_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.maifeng.fashiongo.FirstClassifyAcitvity"
+            android:label="@string/app_name" />
+
+        <!-- 选择省份 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Provice_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 选择城市 -->
+        <activity
+            android:name="com.maifeng.fashiongo.City_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 选择县/区 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Area_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 编辑收货地址 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Edit_GoodsAddress_Activity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 编辑基本信息 -->
+        <activity
+            android:name="com.maifeng.fashiongo.Edit_BasiinformationAcitivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 我的订单 -->
+        <activity
+            android:name="com.maifeng.fashiongo.MyOrder"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 获取的收藏 -->
+        <activity
+            android:name="com.maifeng.fashiongo.GetMyCollectionActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <!-- 获取的收藏 -->
+        <activity
+            android:name="com.maifeng.fashiongo.GetMyShareActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity android:name=".protocolActivity" >
+        </activity>
+        <activity android:name=".FindPasswordActivity" >
+        </activity>
+        <activity android:name=".AboutUsActivity" >
+        </activity>
+        <activity android:name=".RegisterActivity" >
+        </activity>
+        <activity android:name=".Confirm_Order_Activity" >
+        </activity>
+        <!-- 三级分类 -->
+        <activity
+            android:name="com.maifeng.fashiongo.ThreeClassifyActivity"
+            android:label="@string/app_name" />
+        <!-- 商品列表 -->
+        <activity
+            android:name="com.maifeng.fashiongo.GoodListActivity"
+            android:label="@string/app_name" />
+        <!-- 产品详情 -->
+        <activity
+            android:name="com.maifeng.fashiongo.GoodDetailActivity"
+            android:label="@string/app_name" />
+        <activity
+            android:name="cn.sharesdk.framework.ShareSDKUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <!-- 微信分享回调 -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.mob.tools.MobUIShell"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
+            <intent-filter>
+                <data android:scheme="tencent100371282" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+            <!-- 调用新浪原生SDK，需要注册的回调activity -->
+            <intent-filter>
+                <action android:name="com.sina.weibo.sdk.action.ACTION_SDK_REQ_ACTIVITY" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <uses-library
+            android:name="org.simalliance.openmobileapi"
+            android:required="false" />
+
+        <activity
+            android:name="com.unionpay.uppay.PayActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.unionpay.UPPayWapActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+
+        <!-- 支付宝 -->
+        <activity
+            android:name="com.maifeng.fashiongo.alipay.H5PayDemoActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" >
+        </activity>
+        <!-- alipay sdk begin -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity android:name="com.maifeng.fashiongo.alipay.PayDemoActivity" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="horizontal">
+    
+   	<CheckBox
+   	    android:id="@+id/checkBox_list"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:button="@null"
+        android:background="@drawable/selector_checkbox"
+        android:focusable="false"
+        android:focusableInTouchMode="true"
+        />
+   	<com.android.volley.toolbox.NetworkImageView 
+   	    android:id="@+id/iv_shopimg"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+   	    android:layout_gravity="center_vertical"
+   	    android:layout_marginRight="10dp"
+   	    android:src="@drawable/img_png2"/>
+   	
+   	<LinearLayout 
+   	    android:layout_width="0dp"
+   	    android:layout_height="60dp"
+   	    android:layout_weight="1"
+   	    android:layout_gravity="center_vertical"
+   	    android:orientation="vertical">
+   	    
+   	    <TextView 
+   	        android:id="@+id/tv_name"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="30dp"
+   	        android:text="测试商品2"
+   	        android:textSize="14sp"/>
+   	    <LinearLayout 
+   	        android:layout_width="match_parent"
+   	        android:layout_height="30dp"
+   	        android:orientation="horizontal">
+    	    <TextView 
+    	        android:id="@+id/tv_model"
+   	        	android:layout_width="wrap_content"
+   	        	android:layout_height="wrap_content"
+   	        	android:layout_gravity="bottom"
+   	        	android:layout_marginRight="10dp"
+   	        	android:text="红色"
+   	        	android:textSize="14sp"/>
+    	    <TextView 
+    	        android:id="@+id/tv_size"
+   	        	android:layout_width="wrap_content"
+   	        	android:layout_height="wrap_content"
+   	        	android:layout_gravity="bottom"
+   	        	android:text="小包"
+   	        	android:textSize="14sp"/>   	    
+   	    </LinearLayout>
+   	</LinearLayout>
+   	<LinearLayout 
+   	    	android:layout_width="0dp"
+   	        android:layout_height="60dp"
+   	        android:layout_weight="1"
+   	        android:layout_gravity="center_vertical"
+   	        android:gravity="right"
+   	        android:layout_marginLeft="10dp"
+   	        android:layout_marginRight="10dp"
+   	        android:orientation="vertical">
+   	    
+   	    <TextView 
+   	        android:id="@+id/tv_price"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="0dp"
+   	        android:layout_weight="1"
+   	        android:gravity="center_vertical"
+   	        android:text="￥210.02"
+   	        android:textSize="14sp"
+   	        android:textColor="#FF8040"/>
+    	<TextView 
+    	    android:id="@+id/tv_number"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="0dp"
+   	        android:layout_weight="1"
+   	        android:layout_marginRight="10dp"
+   	        android:gravity="center_vertical"
+   	        android:text="x 1"
+   	        android:textSize="14sp"/>
+    	<Button 
+    	    android:id="@+id/btn_delete"
+        	android:layout_width="40dp"
+        	android:layout_height="20dp"
+        	android:text="删除"
+        	android:textSize="12sp"
+        	android:textColor="#FFFFFF"
+        	android:background="@drawable/selector_shoppingcar_delete_btn"/>	    
+   	        
+   	    </LinearLayout>
+    
+    
+    
+    
+    
+
+</LinearLayout>

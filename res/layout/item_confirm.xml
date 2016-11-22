@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:padding="10dp"
+    android:background="#FFFFFF"
+    android:descendantFocusability="afterDescendants"
+    android:orientation="horizontal">
+    
+
+   	<com.android.volley.toolbox.NetworkImageView 
+   	    android:id="@+id/iv_shopimg"
+   	    android:layout_width="60dp"
+   	    android:layout_height="60dp"
+   	    android:layout_gravity="center_vertical"
+   	    android:layout_marginRight="10dp"
+   	    android:src="@drawable/img_png2"/>
+   	
+   	<LinearLayout 
+   	    android:layout_width="0dp"
+   	    android:layout_height="60dp"
+   	    android:layout_weight="1"
+   	    android:layout_gravity="center_vertical"
+   	    android:orientation="vertical">
+   	    
+   	    <TextView 
+   	        android:id="@+id/tv_name"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="30dp"
+   	        android:text="测试商品2"
+   	        android:textSize="14sp"/>
+   	</LinearLayout>
+   	<LinearLayout 
+   	    	android:layout_width="0dp"
+   	        android:layout_height="60dp"
+   	        android:layout_weight="1"
+   	        android:layout_gravity="center_vertical"
+   	        android:gravity="right"
+   	        android:layout_marginLeft="10dp"
+   	        android:layout_marginRight="10dp"
+   	        android:orientation="vertical">
+   	    
+   	    <TextView 
+   	        android:id="@+id/tv_price"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="0dp"
+   	        android:layout_weight="1"
+   	        android:gravity="center_vertical"
+   	        android:text="￥210.02"
+   	        android:textSize="14sp"
+   	        android:textColor="#FF8040"/>
+   	    <LinearLayout
+   	        android:layout_width="match_parent"
+   	        android:layout_height="wrap_content"
+   	        android:gravity="right"
+   	        android:orientation="horizontal">
+   	    <TextView 
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:gravity="center_vertical"
+   	        android:text="x"
+   	        android:textSize="14sp"/>	    
+   	    <TextView 
+   	        android:id="@+id/tv_number"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:textSize="14sp"
+   	        android:text="1"
+   	        />
+   	        
+   	        
+   	    </LinearLayout>
+    	
+   	        
+   	    </LinearLayout>
+    
+    
+    
+    
+    
+
+</LinearLayout>

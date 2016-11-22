@@ -1,0 +1,85 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/gtv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:text="@string/goods_text_name" />
+
+    <TextView
+        android:id="@+id/gtv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gtv_name"
+        android:layout_alignBottom="@+id/gtv_name"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:text="@string/goods_ed_phone" />
+
+    <ImageView
+        android:id="@+id/tv_img_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gtv_phone"
+        android:src="@drawable/ico_go" 
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/gtv_province"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gtv_name"
+        android:layout_below="@+id/gtv_name"
+        android:layout_marginTop="8dp"
+        android:textColor="#000000"
+        android:text="@string/goods_text_province" />
+
+    <TextView
+        android:id="@+id/gtv_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gtv_province"
+        android:layout_alignBottom="@+id/gtv_province"
+        android:layout_toRightOf="@+id/gtv_province"
+        android:textColor="#000000"
+        android:text="@string/goods_text_city" />
+
+    <TextView
+        android:id="@+id/gtv_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gtv_city"
+        android:layout_alignBottom="@+id/gtv_city"
+        android:layout_toRightOf="@+id/gtv_city"
+        android:textColor="#000000"
+        android:text="@string/goods_text_area" />
+
+    <TextView
+        android:id="@+id/gtv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/gtv_area"
+        android:layout_alignBottom="@+id/gtv_area"
+        android:layout_toRightOf="@+id/gtv_area"
+        android:textColor="#000000"
+        android:text="@string/goods_text_address" />
+    
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E0E0E0"
+        android:layout_alignParentBottom="true"/>
+    
+ 
+    
+</RelativeLayout>

@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include 
+		layout="@layout/topbar"
+		android:id="@+id/topbar"
+		/>
+    <RelativeLayout
+        android:id="@+id/relative_pca"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/dl_province"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="河北省"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dl_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dl_province"
+            android:layout_alignBottom="@+id/dl_province"
+            android:layout_toRightOf="@+id/dl_province"
+            android:text="张家口市"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/dl_area"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/dl_city"
+            android:layout_alignBottom="@+id/dl_city"
+            android:layout_toRightOf="@+id/dl_city"
+            android:text="康保县"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dl_province"
+            android:layout_below="@+id/dl_province"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp"
+            android:text="所在地区" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/dl_area"
+            android:padding="5dp"
+            android:src="@drawable/ico_go" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8"/>
+    <RelativeLayout
+        android:id="@+id/relative_detailadress"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/dl_detailaddress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="哈哈哈"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dl_detailaddress"
+            android:layout_below="@+id/dl_detailaddress"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp"
+            android:text="详细地址" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8"/>
+    <RelativeLayout
+        android:id="@+id/relative_name"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/dl_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="小佳佳"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dl_name"
+            android:layout_below="@+id/dl_name"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp"
+            android:text="收货人姓名" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8"/>
+    
+   <RelativeLayout
+        android:id="@+id/relative_phone"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <EditText
+            android:id="@+id/dl_phone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="13726214191"
+            android:textColor="#000000"
+            android:singleLine="true"
+            android:background="@null"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/dl_phone"
+            android:layout_below="@+id/dl_phone"
+            android:layout_marginBottom="5dp"
+            android:textSize="10sp"
+            android:text="手机号码" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#c8c8c8"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/edit_save"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/button_skin"
+            android:text="保存"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
+</LinearLayout>

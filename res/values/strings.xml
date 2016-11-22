@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">时尚Go</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="goods_tv_name">收货人姓名：</string>
+    <string name="goods_ed_name">请输入收货人姓名</string>
+    <string name="goods_tv_phone">手机号码：</string>
+    <string name="goods_ed_phone">请输入手机号</string>
+    <string name="goods_tv_province">选择省份：</string>
+    <string name="goods_view_province">请选择省份</string>
+    <string name="goods_tv_city">选择城市：</string>
+    <string name="goods_view_city">请选择城市</string>
+    <string name="goods_tv_area">选择县/区：</string>
+    <string name="goods_view_area">请选择区域</string>
+    <string name="goods_tv_address">详细地址：</string>
+    <string name="goods_ed_address">请填写详细地址</string>
+    <string name="goods_textView_province">广东</string>
+    <string name="goods_textView_city">珠海</string>
+    <string name="goods_textView_area">省科干</string>
+    <string name="goods_text_name">小佳佳</string>
+    <string name="goods_text_phone">13726214191</string>
+    <string name="goods_text_province">广东省</string>
+    <string name="goods_text_city">珠海市</string>
+    <string name="goods_text_area">金湾区</string>
+    <string name="goods_text_address">省科干</string>
+    
+    <string name="header_hint_refresh_normal">下拉刷新数据 </string>
+    <string name="header_hint_refresh_ready">松开刷新数据</string>
+    <string name="header_hint_refresh_loading">数据刷新中&#8230;</string>
+    <string name="header_hint_refresh_time">最近更新时间：</string>
+    <string name="footer_hint_load_normal">加载更多 </string>
+    <string name="footer_hint_load_ready">松开加载更多</string>
+
+</resources>
